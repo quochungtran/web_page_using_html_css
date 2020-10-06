@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul class="top-nav" id = "dropdownClick">
+            <li><a href=#home>Home</a></li>
+            <li><a href="#News">News</a>  </li>
+            <li><a href="#contact">Contact</a>  </li>
+            <li><a href="#about">About</a>  </li>
+            <li class="top-nav-right"><a href="#signup">Sign Up</a>  </li>
+            <li class="top-nav-right"><a href="#signin">Sign In</a>  </li>
+            <li class = "dropdownIcon"><a href="javascript:void(0);" 
+                onclick="DropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+
+    <script>
+        function DropdownMenu(){
+            var x = document.getElementById("dropdownClick");
+            if(x.className === "top-nav"){
+                x.className += " responsive";
+                /*change topnav to top-nav.responsive*/
+            } else {
+                x.className= "top-nav"
+            }
+        }
+    </script>
+
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6">
+                <div class="left_side_col">
+                    <h1 class="lagre">  TRAN Quoc Hung</h1>
+                    <h1 class="lagre">  Data Scienctist</h1>
+                </div>
+                <form class="left_side_col" >
+                    <div>
+                        <h2>User name</h2>
+                        <input class = "input_box" name = "Username" type="text" placeholder="Username">
+                        <h2>Password</h2>
+                        <input class = "input_box" name = "Password" type="text" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-6"> 
+                <div class="right_Side_col">
+                    <div class="video_container">
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/lngRhv4w9Z8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                
+                 </div>     
+                </div>     
+        </div>
+    </div>
+
+    <header>
+        <h1 class="section2header"> Question pour moi </h1>
+    </header>
+
+    <div class="Container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img class="image" src="man-user.png" alt="introduction">
+                    </div>
+                    <label> Qui-suis je</label>
+                    <p>Je suis un être humain comme tout le monde, 
+                        Je suis le gacons de mon pere et ma mère, ce qui j'aime plus,
+                        Je suis vietnamien, et Je voudrais toujours distribuer pour le monde 
+                        et mon pays.
+                        Je prends toujours mes temps pour découvrir et se dépasser      
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img class="image" src="man-user.png" alt="introduction">
+                    </div>
+                    <label> Quels sont mes passions </label>
+                    <p> Mathematique est ma passion depuis longtemps, resoudre des difficlies problemes
+                        de mathematique est attirant pour moi.
+                    <p>Les voyages , je peux travailler de n’importe où dans le monde, comme je le souhaite et apporter une différence positive dans la vie de mes clients, tout en menant la vie que je souhaite. J’ai d’ailleurs mis au point un programme spécial Devenir digital nomade par lequel je vous aide à vous créer votre propre activité en ligne et en vivre confortablement.</p>    
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img class="image" src="man-user.png" alt="introduction">
+                    </div>
+                    <label> Mes reves</label>
+                    <p>Devenir un sofware ingenieur ou data scientist dans le domain de AI
+                        mahine learning, deep learning      
+                        
+                    </p>
+                    <p>Distribuer pour mon pays</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button class="learnmore">Learn more</button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <hr>
+    <div class =container>
+        <div class="row">
+            <div class = "col-7">
+                <article>
+                    <p>La section football du FC Barcelone (dont le nom officiel en catalan est Futbol Club Barcelona et le diminutif Barça) est un club de football espagnol fondé en 1899, basé à Barcelone et qui évolue dans le championnat d'Espagne de football.
+
+                        Le Barça est le troisième européen au classement des clubs de football du xxe siècle décerné par l'IFFHS et le club européen le plus titré du xxie siècle2. Il a remporté au total vingt-six championnats, trente Coupes d'Espagne, cinq Ligues des champions, quatre Coupes des vainqueurs de coupe, trois Coupes des villes de foire et trois Coupes du monde des clubs.
+                    </p>
+                </article>
+            </div>
+
+            <div class="col-5" >
+                <div class="slopeIcon">
+                    <img src="barca.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footsy">
+        <div class="row" >
+            <div class="col-3 mobileStack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileStack">
+                <h1>Skills</h1>
+                <ul>
+                    <li>Machine learning</li>
+                    <li>Deep learning</li>
+                    <li>Math</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileStack">
+                <h1>Learn at</h1>
+                <ul>
+                    <li>UTC</li>
+                    <li>Coursera</li>
+                    <li>Udemy</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileStack">
+                <h1>Support</h1>
+                <ul>
+                    <li>Family</li>
+                    <li>friend</li>
+                    <li>Teacher</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

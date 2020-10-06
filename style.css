@@ -1,0 +1,325 @@
+
+/* ###########Defauts################ */
+nav,
+footer,
+header{
+    display: block;
+}
+
+
+body{
+    line-height: 1;
+     margin: 0;  /* assure that every thing is edges */
+
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+label{
+    font-size: 35px;
+    font-weight : 600 ;
+     
+}
+
+p{
+    font-size:  20px ;
+    line-height: 1.2 ;
+}
+
+.col-1 {width:  8.33%;}
+.col-2 {width:  16.66%;}
+.col-3 {width:  25%;}
+.col-4 {width:  33.33%;}
+.col-5 {width:  41.66%;}
+.col-6 {width:  50%;}
+.col-7 {width:  58.33%;}
+.col-8 {width:  66.66%;}
+.col-9 {width:  75%;}
+.col-10 {width:  83.33%;}
+.col-11 {width:  91.66%;}
+.col-12 {width:  100%;}
+
+
+article p{
+    font-size : 28px;
+    line-height: 1.2;
+    padding: 20px;
+}
+
+
+
+
+/* #################Navbar############## */
+ul.top-nav {
+      background-color: #eee ;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+}
+
+ul.top-nav li{
+    float: left;
+    list-style: none;
+} 
+
+ul.top-nav li.top-nav-right{
+    float: right;
+}
+
+ul.top-nav li a{    
+    display: block;
+    text-align: center;
+    text-decoration: none; /*reject underline style*/
+    padding: 30px;/* create space around elements,
+     outside of any defined borders. */
+    color: black;
+    min-height: 16px;
+    text-transform: uppercase;
+}
+
+ul.top-nav li a:hover{
+    background-color: cadetblue;
+    color: brown;
+}    
+
+* {
+  box-sizing: border-box;
+}
+
+/* ############## custom style  ################ */
+h1.lagre{
+    color: #fff;
+    font-size: 56px;
+    margin: 0px;
+    line-height: 70px;
+}
+
+form h2 {
+    color : #fff;
+}
+
+input[type="text"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    border-radius : 10px ;
+    padding: 5px;
+
+}
+
+.left_side_col{
+    margin-left: 30%;
+}
+
+div.right_Side_col{
+    margin-right: 30%;
+}
+
+h1.section2header{
+    display: block;
+    font-size: 65px;
+    text-align: center;
+
+}
+
+div.box{
+    text-align: center;
+    margin: 40px;   /* spaca between the box */
+    padding : 36px 24px 40px 24px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0,0,.15),
+       0 2px 3px 0 rgba(0,0, 0, .1) ;   
+           /* refer in css shadow generotor */
+    border-radius : 7px;  
+    width: 500px;
+    height: 500px;
+}
+
+div.slopeIcon img{
+    display: block  ;
+    margin: auto;
+    box-shadow:  -2px -2px 5px 2px rgba(0 /*sh*/,0 , 0 , 0.15 ),
+    2px 2px 4px 2px rgba(0, 0,0,1);    
+
+}
+
+
+button{
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0069ff;
+    padding : 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px ;
+    border-radius : 7px ;
+}
+
+button.learnmore{
+    display: block;
+    margin: auto; /* adjust automatically to move in the middle */
+     
+}
+
+
+div.icon{
+    width: 100%;
+
+}
+
+img.image{
+    width: 30%;
+    width: 30%;
+}
+
+#section-1-gradient{
+    background-color:  rgb(0, 26, 255);
+}
+
+
+/*footer*/
+footer.footsy{
+    background-color: #666;
+    padding-left: 10%;
+
+    
+}
+
+footer.footsy h1{
+    color: #fff;
+    font-size:  35px;
+
+}
+
+footer.footsy ul{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+   
+}
+
+
+footer.footsy ul{
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.2;
+    
+}
+
+
+/* ############## Mobile responsive   ################ */
+@media screen and (max-width:680px){
+    ul.top-nav li:not(:nth-child(1)){
+        display: none;
+    }    
+    
+
+
+ul.top-nav li.dropdownIcon{
+    display: block;
+    float:right;
+}
+
+ul.top-nav.responsive li.dropdownIcon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ul.top-nav.responsive {
+    display: relative ; 
+}
+
+ul.top-nav.responsive li{
+    display: inline;
+    float: none;
+}
+
+
+ul.top-nav.responsive li a{
+    display: block;
+    text-align: left;
+}
+
+h1.section2header{
+    font-size: 50px ;
+}
+
+.col-7,
+.col-5,
+.col-6,
+.col-4{
+    width: 100%;
+    margin : 0 ;
+}
+
+div.mobileStack{
+    width: 50%;
+    display: block;
+    
+}
+
+div.box{
+    padding: 5px;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin : 0;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+div.left_side_col, 
+div.right_Side_col{
+    margin : 15px ; 
+}
+
+input[type = "text"]{
+    width: 350px;
+}
+
+.video_container iframe {
+    position: relative;
+    width: 100%;
+    margin : 0;
+    overflow: hidden;
+}
+
+button.learnmore{
+    position: relative;
+    margin-top: 10px;
+}
+
+article p {
+    font-size: 25px;
+}
+
+div.slopeIcon{
+    margin: 10px;
+}
+div.slopeIcon img{
+    width: 100%;
+}
+
+
+
+}
